@@ -163,7 +163,7 @@ nav .icon-burger .line {
         width: auto;
         height: auto;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         background-color: #000;
         overflow: hidden;
         transition: all .5s ease-in-out;
@@ -187,6 +187,10 @@ nav .icon-burger .line {
     }
     nav :checked ~ .icon-burger .line:nth-child(2) {
         opacity: 0;
+    }
+    nav .links li {
+        list-style: none;
+        padding-bottom: 35px;
     }
 }
 
@@ -542,6 +546,9 @@ nav .icon-burger .line {
 @media(max-width:768px) {
     .contact-us img {
         object-fit: cover;
+        height: 100%;
+    }
+    .contact-us {
         height: 100vw;
     }
 }
