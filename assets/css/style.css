@@ -34,6 +34,7 @@
   src: local('Neue Montreal-bold'), url('../font/ppneuemontreal-bold.woff') format('woff');
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -59,8 +60,9 @@ body {
   --dark: #0f172b;
 }
 
-/* header */
-
+/*--------------------------------------------------------------
+# header
+--------------------------------------------------------------*/
 
 nav {
     position: absolute;
@@ -198,77 +200,211 @@ nav .icon-burger .line {
     }
 }
 
-/* header end*/
+/*--------------------------------------------------------------
+# header End
+--------------------------------------------------------------*/
 
-/* footer*/
 
-.footer-top {
-    margin-bottom: 20px;
-}
+/*--------------------------------------------------------------
+# loading
+--------------------------------------------------------------*/
 
-.footer-dsclinx{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-dsclinx h1{
-    color: #B1B1B1;
-    font-family: 'Neue Montreal-medium';
-    font-size: 13vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  .loading-block {
+    position: fixed;
+    background: #ffffff;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
 }
 
-.footer-details p{
-    color: #000;
-    font-family: 'Neue Montreal-medium';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 0;
+.loading-block_logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
-.Copyright {
-    display: flex;
-    justify-content: end;
+.loading-block_logo img {
+    width: 260px;
 }
 
-.Copyright p{
-    margin: 0;
-    padding: 0;
-    color: #000;
-    font-family: 'Neue Montreal-medium';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: -50px;
+.fadeUp {
+    opacity: 0;
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
-@media(max-width:992px) {
-.logo-dsclinx h1 {
-    color: #B1B1B1;
-    font-family: 'Neue Montreal-medium';
-    /* font-size: 130.92px; */
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+@keyframes fadeUpAnime {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
 }
-.Copyright p {
-    margin: 0;
-    padding: 0;
-    color: #000;
-    font-family: 'Neue Montreal-medium';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: -20px;
+  
+/*--------------------------------------------------------------
+# loading End
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.progress-wrap {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+    box-shadow: inset 0 0 0 2px rgb(0 0 0 / 20%);
+	z-index: 100;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
 }
+.progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
 }
+.progress-wrap::after {
+	position: absolute;
+	font-family: 'unicons';
+	content: '\e84b';
+	text-align: center;
+	line-height: 46px;
+	font-size: 24px;
+	color: #000000;
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 1;
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap:hover::after {
+	opacity: 0;
+}
+.progress-wrap::before {
+	position: absolute;
+	font-family: 'unicons';
+	content: '\e84b';
+	text-align: center;
+	line-height: 46px;
+	font-size: 24px;
+	opacity: 0;
+/* 	background-image: linear-gradient(298deg, var(--red), var(--yellow)); */
+    /* background-color: #000; */
+	-webkit-text-fill-color: transparent;
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 2;
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap:hover::before {
+	opacity: 1;
+}
+.progress-wrap svg path { 
+	fill: none; 
+}
+.progress-wrap svg.progress-circle path {
+	stroke: #000000af;
+	stroke-width: 4;
+	box-sizing:border-box;
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+
+  /*--------------------------------------------------------------
+  # footer
+  --------------------------------------------------------------*/
+
+    .footer-top {
+        margin-bottom: 20px;
+    }
+
+    .footer-dsclinx{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-dsclinx h1{
+        color: #B1B1B1;
+        font-family: 'Neue Montreal-medium';
+        font-size: 13vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .footer-details p{
+        color: #000;
+        font-family: 'Neue Montreal-medium';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0;
+    }
+
+    .Copyright {
+        display: flex;
+        justify-content: end;
+    }
+
+    .Copyright p{
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-family: 'Neue Montreal-medium';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: -50px;
+    }
+
+    @media(max-width:992px) {
+    .logo-dsclinx h1 {
+        color: #B1B1B1;
+        font-family: 'Neue Montreal-medium';
+        /* font-size: 130.92px; */
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .Copyright p {
+        margin: 0;
+        padding: 0;
+        color: #000;
+        font-family: 'Neue Montreal-medium';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: -20px;
+    }
+    }
 
 @media(max-width:768px) {
     .logo-dsclinx h1 {
@@ -328,11 +464,13 @@ nav .icon-burger .line {
     }
     }
 
-/* footer end*/
+  /*--------------------------------------------------------------
+  # footer End
+  --------------------------------------------------------------*/
 
-
-
-/* contact-us*/
+  /*--------------------------------------------------------------
+  # contact-us
+  --------------------------------------------------------------*/
 
 .contact-us{
     background-image: url('../images/pexels-max-rahubovskiy-6207817\ 1.png');
@@ -382,6 +520,7 @@ nav .icon-burger .line {
     line-height: normal;
     text-transform: uppercase;
 }
+
 
 .lets-together{
     padding-top: 25px;
@@ -647,4 +786,6 @@ nav .icon-burger .line {
     }
 }
 
-/* contact-us end*/
+  /*--------------------------------------------------------------
+  # contact-us End
+  --------------------------------------------------------------*/
