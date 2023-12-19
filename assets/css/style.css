@@ -1,32 +1,36 @@
-@import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
-
 @font-face {
   font-family: 'Neue Montreal';
-  font-style: normal;
-  font-weight: normal;
+  /* font-style: normal;
+  font-weight: normal; */
   src: local('Neue Montreal'), url('../font/ppneuemontreal-thin.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Neue Montreal-book';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: local('Neue Montreal'), url('../font/ppneuemontreal-book.woff') format('woff');
+  }
 
 @font-face {
   font-family: 'Neue Montreal-medium';
   src: url('../font/ppneuemontreal-medium.woff') format('woff');
-  font-weight: 400;
+  /* font-weight: 400;
   font-display: swap;
-  font-style: normal;
+  font-style: normal; */
 }
 
 @font-face {
     font-family: 'Neue Montreal-semi';
-    font-style: normal;
-    font-weight: normal;
+    /* font-style: normal;
+    font-weight: normal; */
     src: local('Neue Montreal-semi'), url('../font/ppneuemontreal-semibolditalic.woff') format('woff');
   }
 
 @font-face {
   font-family: 'Neue Montreal-bold';
-  font-style: normal;
-  font-weight: normal;
+  /* font-style: normal;
+  font-weight: normal; */
   src: local('Neue Montreal-bold'), url('../font/ppneuemontreal-bold.woff') format('woff');
 }
 
@@ -334,7 +338,7 @@ nav .icon-burger .line {
 .contact-txt h1{
     color: #FFF;
     text-align: center;
-    font-family: 'Neue Montreal-medium';
+    font-family: 'Neue Montreal';
     font-size: 100px;
     font-style: normal;
     font-weight: 400;
