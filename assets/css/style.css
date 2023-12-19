@@ -41,6 +41,7 @@
 }
 
 a{
+    color: #000;
     text-decoration: none;
 }
 
@@ -788,3 +789,151 @@ nav .icon-burger .line {
   /*--------------------------------------------------------------
   # contact-us End
   --------------------------------------------------------------*/
+
+
+  /*--------------------------------------------------------------
+  # About Us
+  --------------------------------------------------------------*/
+
+  .about-section {
+    padding-top: 54px;
+    padding-bottom: 20px;
+  }
+
+  .section-about-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px; 
+  }
+
+  .grid-about-sect2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .sect2-about-outer{
+    padding: 29px;
+    border: 1px solid #B1B1B1;
+  }
+
+  .sect2-about-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .square{
+    width: 18px;
+    height: 18px;
+    background: #D9D9D9;
+  }
+
+  .sect2-about-inner p {
+    color: #B1B1B1;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .about-sect2-height{
+    height: 87px;
+  }
+
+  .about-inner-text span{
+    color: #B1B1B1;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .about-inner-text h1{
+    color: #000;
+    font-family: 'Neue Montreal-medium';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .about-inner-text p{
+    color: #000;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 476px;
+  }
+
+  .sect2-about-outer p {
+    color: #000;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+.why-us{
+    background-image: url('../images/pexels-gül-işık-11538103\ 1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.grid-why-us{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 300px;
+}
+
+.why-us-outer{
+    padding-top:30px;
+    padding-left: 18px;
+}
+
+.why-us-outer span{
+    color: #B1B1B1;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.why-us-outer h1{
+    color: #FFF;
+    font-family: 'Neue Montreal-medium';
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.why-us-outer p{
+    color: #FFF;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.why-us-sect2-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
