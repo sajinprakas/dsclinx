@@ -258,7 +258,7 @@ nav .icon-burger .line {
 --------------------------------------------------------------*/
 .progress-wrap {
 	position: fixed;
-	right: 50px;
+    right: 15px;
 	bottom: 50px;
 	height: 46px;
 	width: 46px;
@@ -887,19 +887,22 @@ nav .icon-burger .line {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 530px;
     position: relative;
 }
 
 .grid-why-us{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 230px;
 }
 
 .why-us-outer{
     padding-top:30px;
     padding-left: 18px;
+    width: 70%;
 }
 
 .why-us-outer span{
@@ -936,4 +939,140 @@ nav .icon-burger .line {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-top: 24px;  
+}
+
+.why-us-sect2-txt h6{
+    color: #FFF;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.why-us-sect2-txt p{
+    color: #FFF;
+    text-align: right;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sect-2-whyus{
+    width: 60%;
+}
+
+.why-us .sect-2-whyus{
+    margin-top: auto;   
+}
+
+@media(max-width:992px) {
+    .section-about-grid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 50px;
+    }
+    .grid-why-us {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 70px;
+    }
+    .why-us-outer h1 {
+        color: #FFF;
+        font-family: 'Neue Montreal-medium';
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    .about-inner-text p {
+        color: #000;
+        font-family: Neue Montreal;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .why-us-outer h1 {
+        color: #FFF;
+        font-family: 'Neue Montreal-medium';
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    .grid-why-us {
+        display: contents;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 70px;
+    }
+    .why-us-outer {
+        padding-top: 30px;
+        padding-left: 18px;
+        width: 100%;
+    }
+    .sect-2-whyus {
+        width: 100%;
+    } 
+    .why-us {
+        background-image: url(../images/pexels-gül-işık-11538103\ 1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        position: relative;
+    }
+    .sect-2-whyus{
+        padding-bottom: 30px;
+        padding-left: 18px;
+    }
+} 
+
+
+@media(max-width:600px) {
+    .grid-about-sect2 {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-inner-text h1 {
+        color: #000;
+        font-family: 'Neue Montreal-medium';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    .why-us-outer h1 {
+        color: #FFF;
+        font-family: 'Neue Montreal-medium';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    .sect-2-whyus{
+        padding-bottom: 30px;
+    }
 }
