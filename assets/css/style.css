@@ -6,31 +6,31 @@
 }
 
 @font-face {
-    font-family: 'Neue Montreal-book';
-    /* font-style: normal;
-    font-weight: normal; */
-    src: local('Neue Montreal'), url('../font/ppneuemontreal-book.woff') format('woff');
+    font-family: 'Neue Montreal-regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neue Montreal'), url('../font/Neue\ Montreal\ Regular\ 400.woff') format('woff');
   }
 
 @font-face {
   font-family: 'Neue Montreal-medium';
   src: url('../font/ppneuemontreal-medium.woff') format('woff');
-  /* font-weight: 400;
+  font-weight: 400;
   font-display: swap;
-  font-style: normal; */
+  font-style: normal;
 }
 
 @font-face {
     font-family: 'Neue Montreal-semi';
-    /* font-style: normal;
-    font-weight: normal; */
+    font-style: normal;
+    font-weight: normal;
     src: local('Neue Montreal-semi'), url('../font/ppneuemontreal-semibolditalic.woff') format('woff');
   }
 
 @font-face {
   font-family: 'Neue Montreal-bold';
-  /* font-style: normal;
-  font-weight: normal; */
+  font-style: normal;
+  font-weight: normal;
   src: local('Neue Montreal-bold'), url('../font/ppneuemontreal-bold.woff') format('woff');
 }
 
@@ -98,9 +98,9 @@ nav .links a {
     display: block;
     color: #FFF;
     font-family: Neue Montreal;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -202,6 +202,10 @@ nav .icon-burger .line {
 
 /* footer*/
 
+.footer-top {
+    margin-bottom: 20px;
+}
+
 .footer-dsclinx{
     display: flex;
     justify-content: space-between;
@@ -296,6 +300,8 @@ nav .icon-burger .line {
         padding: 0;
         margin-bottom: 10px;
     }
+
+}
     @media(max-width:600px) {
     .footer-dsclinx {
         display: block;
@@ -310,8 +316,17 @@ nav .icon-burger .line {
         column-gap: 14px;
         padding-bottom: 10px;
     }
+    .head-together h1 {
+        color: #000;
+        font-family: 'Neue Montreal-medium';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
     }
-}
+    }
 
 /* footer end*/
 
@@ -319,15 +334,26 @@ nav .icon-burger .line {
 
 /* contact-us*/
 
-.contact-us img{
-    overflow: hidden;
-    object-fit: contain;
-    position: relative;
-    height: 100%;
+.contact-us{
+    background-image: url('../images/pexels-max-rahubovskiy-6207817\ 1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-.contact-txt {
+.overlay {
+    background-color: #00000049;
+    opacity: .5;
+    transition: background .3s,border-radius .3s,opacity .3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     position: absolute;
+}
+.contact-txt {
+    position: relative;
     top: 50%;
     left: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
@@ -338,7 +364,7 @@ nav .icon-burger .line {
 .contact-txt h1{
     color: #FFF;
     text-align: center;
-    font-family: 'Neue Montreal';
+    font-family: 'Neue Montreal-regular';
     font-size: 100px;
     font-style: normal;
     font-weight: 400;
@@ -379,6 +405,10 @@ nav .icon-burger .line {
     border-bottom: 1px solid #B1B1B1;
     border-right: 1px solid #B1B1B1;
     padding: 26px 35px;
+}
+
+.social-inner-div {
+    height: 230px;
 }
 
 .line {
@@ -448,13 +478,11 @@ nav .icon-burger .line {
     padding-top: 55px;
 }
 
-.butn-circle {
+  .butn-circle {
     width: 160px;
     height: 160px;
     position: relative;
     overflow: hidden;
-    z-index: 1;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -465,39 +493,57 @@ nav .icon-burger .line {
     line-height: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transition: all 0.3s ease-out;
-}
-
-.butn-circle {
     background: #fff;
     color: #B1B1B1;
-    border: 1px solid #B1B1B1;
-  }
+}
 
-  .butn-circle:hover {
-    background: #000000;
-    color: #ffffff;
-    border: 1px solid #000;
-  }
-
-.butn-circle::after {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    transform: scale(0, 0);
-  }
-
-
-  .butn-circle::after {
-    content: "";
-    /* background: #ffffff; */
+  .butn-circle:before {
+    content: '';
     position: absolute;
-    z-index: -1;
-    padding: 0.85em 0.75em;
-    display: block;
-    transform: scale(1, 1);
-  }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+  .butn-circle:hover:after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.butn-circle:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #000000;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.butn-circle:hover span{
+    color: #ffffff;
+}
+
+.butn-circle span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2;
+    position: relative;
+    z-index: 2;
+}
 
   .form-check-input:checked {
     background-color: #000000;
@@ -509,7 +555,6 @@ nav .icon-burger .line {
     .contact-txt h1 {
         color: #FFF;
         text-align: center;
-        font-family: 'Neue Montreal-medium';
         font-size: 63px;
         font-style: normal;
         font-weight: 400;
@@ -552,16 +597,19 @@ nav .icon-burger .line {
         object-fit: cover;
         height: 100%;
     }
-    .contact-us {
+    /* .contact-us {
         height: 100vw;
+    } */
+    .social-inner-div {
+        height: 150px;
     }
 }
 
 @media(max-width:600px) {
-    .grid-social {
+    /* .grid-social {
         display: grid;
         grid-template-columns: repeat(1,1fr);
-    }
+    } */
     .butn-circle {
         width: 120px;
         height: 120px;
@@ -569,7 +617,6 @@ nav .icon-burger .line {
     .contact-txt h1 {
         color: #FFF;
         text-align: center;
-        font-family: 'Neue Montreal-medium';
         font-size: 40px;
         font-style: normal;
         font-weight: 400;
@@ -582,6 +629,21 @@ nav .icon-burger .line {
     }
     .head-together {
         padding: 29px 0px;
+    }
+    .social-inner-div {
+        height: 80px;
+    }
+    .card-social {
+        padding: 15px 15px;
+    }
+    .social-sec h6 {
+        font-size: 18px;
+    }
+    .social-sec {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        column-gap: 12px;
     }
 }
 
