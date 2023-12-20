@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
 	$(window).on("load", function () {
-	  $(".loading-block").delay(1500).fadeOut("slow");
-	  $(".loading-block_logo").delay(1200).fadeOut("slow");
+	  $(".loading-block").delay(1000).fadeOut("");
+	  $(".loading-block_logo").delay(1000).fadeOut("");
 	});
   });
 	  
