@@ -1083,7 +1083,9 @@ nav .icon-burger .line {
     }
 }
 
-/* services */
+  /*--------------------------------------------------------------
+  # Services
+  --------------------------------------------------------------*/
 
 .service-txt {
     position: relative;
@@ -1241,3 +1243,70 @@ nav .icon-burger .line {
         font-size: 40px;
     }
 }
+
+
+  /*--------------------------------------------------------------
+  # Projects
+  --------------------------------------------------------------*/
+
+  .grid-projects {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  }
+
+  .proj-card {
+    border: 1px solid #B1B1B1;
+    border-radius: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .our-projects{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .card-title{
+    color: #000;
+    font-family: Neue Montreal-regular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  @media(max-width:992px) {
+    .grid-projects {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+      }    
+  }
+
+  @media(max-width:768px) {
+    .grid-projects {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+      }    
+  }
+
+  @media(max-width:600px) {
+    .grid-projects {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+      }    
+  }
