@@ -887,22 +887,22 @@ nav .icon-burger .line {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh; */
-    height: 530px;
+    height: 100vh;
+    /* height: 530px; */
     position: relative;
 }
 
-.grid-why-us{
+/* .grid-why-us{
     display: flex;
     justify-content: space-around;
     align-items: center;
     column-gap: 230px;
-}
+} */
 
 .why-us-outer{
     padding-top:30px;
     padding-left: 18px;
-    width: 70%;
+    width: 50%;
 }
 
 .why-us-outer span{
@@ -933,6 +933,7 @@ nav .icon-burger .line {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width:470px;
 }
 
 .why-us-sect2-txt{
@@ -948,7 +949,7 @@ nav .icon-burger .line {
     font-family: Neue Montreal;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -967,11 +968,11 @@ nav .icon-burger .line {
 }
 
 .sect-2-whyus{
-    width: 60%;
+    width: 40%;
 }
 
 .why-us .sect-2-whyus{
-    margin-top: auto;   
+    margin-left: auto;   
 }
 
 @media(max-width:992px) {
@@ -980,12 +981,12 @@ nav .icon-burger .line {
         grid-template-columns: repeat(1,1fr);
         column-gap: 50px;
     }
-    .grid-why-us {
+    /* .grid-why-us {
         display: flex;
         justify-content: space-around;
         align-items: center;
         column-gap: 70px;
-    }
+    } */
     .why-us-outer h1 {
         color: #FFF;
         font-family: 'Neue Montreal-medium';
@@ -1018,12 +1019,12 @@ nav .icon-burger .line {
         letter-spacing: 5px;
         text-transform: uppercase;
     }
-    .grid-why-us {
+    /* .grid-why-us {
         display: contents;
         justify-content: space-evenly;
         align-items: center;
         column-gap: 70px;
-    }
+    } */
     .why-us-outer {
         padding-top: 30px;
         padding-left: 18px;
@@ -1589,9 +1590,80 @@ nav .icon-burger .line {
     line-height: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-top: 12px;
+    margin-top: 19px;
 }
 
 .supply-line {
     border: 0.1px solid #000000db;
+}
+
+.supplies-divsec-2{
+    padding-top: 56px;
+}
+
+/* why our supply */
+
+.why-our-supply span{
+    color: #B1B1B1; 
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.why-our-supply h3{
+    color: #000;
+    font-family: Neue Montreal-regular;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.our-supply-txt {
+    margin-top: 32px;
+}
+
+.our-supply-txt li {
+    color: #000;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    padding-bottom:12px;
+}
+
+.sec-why-our-supply{
+    padding-bottom: 70px;
+}
+
+@media(max-width:992px) {
+    .what-we-supply-sec h1 {
+        width: 100%;
+        font-size: 50px;
+    }
+    .supply-set-2 {
+      margin-top: 40px;
+    }
+    .img-supply-txt h4 {
+        font-size: 30px;
+    }
+    .hero-super h1 {
+        font-size: 63px;
+        }
+}
+
+@media(max-width:600px) {
+    .what-we-supply-sec h1 {
+        font-size: 40px;
+    }
+   .hero-super h1 {
+    font-size: 40px;
+    }
 }
