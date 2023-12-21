@@ -2294,55 +2294,83 @@ transform: translatey(-50%); */
     
 
 
-    .custom-slider{
-        width: 90%;
-        margin: auto;
-      }
-      .custom-box{
-        border: 1px solid #B1B1B1;
-        padding: 26px 35px;
-        width: 200px;
-        height: 100px;
-        text-align:center;
-        font-size: 5em;
-      }
-      .slick-prev, .slick-next{
-        position: inherit;
-        line-height: 0;
-        top: 50%;
-        width: 30px;
-        height: 30px;
-        display: block;
-        padding: 0;
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-        cursor: pointer;
-        color: transparent;
-        border: none;
-        outline: none;
-        border-radius: 50px;
-        background: #043e46;
-      }
-      .slick-slider{
-        user-select: none;
-      }
-      .slick-next{
-        right: -30px;
-      }
-      .slick-prev{
-        left: -30px;
-      }
-      .slick-next:before{
-        content: '\003e';
-        font-size: 1.2em;
-        font-weight: 1000;
-        padding-left: 12px;
-        color: white;
-      }
-      .slick-prev:before{
-        content: '\003c';
-        font-size: 1.2em;
-        font-weight: 1000;
-        padding-left: 9px;
-        color: white;
-      }
+
+    .carousel-wrap {
+    /* margin: 90px auto; */
+    padding: 20px 0px 50px 5%;
+    /* width: 80%; */
+    position: relative;
+    }
+    
+    .owl-carousel .item {
+    position: relative;
+    z-index: 100; 
+    -webkit-backface-visibility: hidden; 
+    border: 1px solid #B1B1B1;
+    padding: 18px 30px;
+    height: 300px;
+    }
+    
+    .owl-nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+    margin-top: 40px;
+    }
+    /* end fix */
+    .owl-nav > div {
+    /* margin-top: -26px;
+    position: absolute;
+    top: 50%; */
+    color: #cdcbcd;
+    }
+    
+    .owl-nav i {
+    font-size: 52px;
+    }
+    
+    .owl-nav .owl-prev {
+    left: -30px;
+    }
+    
+    .owl-nav .owl-next {
+    right: -30px;
+    }
+
+    .our-works {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.our-works span {
+color: #B1B1B1;
+font-family: Neue Montreal;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 12px;
+}   
+
+.item-name {
+color: #000;
+font-family: Neue Montreal-regular;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+padding-top: 12px;
+}
+
+.owl-carousel .owl-item img {
+    padding: 35px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.company-works{
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
