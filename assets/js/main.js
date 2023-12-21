@@ -51,6 +51,3 @@ $(document).ready(function() {
 		jQuery('html, body').animate({scrollTop: 0}, duration);
 		return false;
 	})
-		
-
-
