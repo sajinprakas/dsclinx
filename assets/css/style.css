@@ -55,11 +55,6 @@ body {
   background-color: #fff;
 }
 
-:root {
-  --primary: #164d92;
-  --light: #f1f8ff;
-  --dark: #0f172b;
-}
 
 /*--------------------------------------------------------------
 # header
@@ -474,10 +469,13 @@ nav .icon-burger .line {
   --------------------------------------------------------------*/
 
 .contact-us{
+    background-image: url('../images/pexels-max-rahubovskiy-6207817\ 1.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
+    position: relative;
 }
 
 .overlay {
@@ -1812,16 +1810,17 @@ nav .icon-burger .line {
 
 .banner-under-sect{
     /* padding-top: 60px; */
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-     top: 40%;
+     /* top: 40%;
     left: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    max-width: 1000px;
+    max-width: 1000px; */
 }
 
 .banner-under-sect p{
@@ -1909,12 +1908,13 @@ nav .icon-burger .line {
 .contact-div {
     display: flex;
     justify-content: center;
-    position: absolute;
+    align-items: center;
+    /* position: absolute;
     bottom: 20px;
     left: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); */
 }
 
 .btn-primary{
@@ -2439,5 +2439,273 @@ padding-top: 12px;
 @media(max-width:768px) {
     .progress-container {
         margin-top: 72px
+    }
+}
+
+
+
+.elementor-section .elementor-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px){
+.elementor-column.elementor-col-100, .elementor-column[data-col="100"] {
+    width: 100%;
+}
+}
+
+.elementor-element {
+    --widgets-spacing: 20px;
+}
+.elementor-element, .elementor-lightbox {
+    --swiper-theme-color: #000;
+    --swiper-navigation-size: 44px;
+    --swiper-pagination-bullet-size: 6px;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+.elementor-column {
+    position: relative;
+    min-height: 1px;
+    display: flex;
+}
+.elementor-element {
+    --flex-direction: initial;
+    --flex-wrap: initial;
+    --justify-content: initial;
+    --align-items: initial;
+    --align-content: initial;
+    --gap: initial;
+    --flex-basis: initial;
+    --flex-grow: initial;
+    --flex-shrink: initial;
+    --order: initial;
+    --align-self: initial;
+    flex-basis: var(--flex-basis);
+    flex-grow: var(--flex-grow);
+    flex-shrink: var(--flex-shrink);
+    order: var(--order);
+    align-self: var(--align-self);
+}
+
+.elementor-31 .elementor-element.elementor-element-eba4ade>.elementor-element-populated {
+    padding: 0;
+}
+
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 10px;
+}
+.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
+    display: flex;
+}
+.elementor-widget-wrap {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.elementor-31 .elementor-element.elementor-element-90ec6ad {
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    padding: 95px 0;
+}
+.elementor-widget-wrap>.elementor-element {
+    width: 100%;
+}
+.elementor-element {
+    --widgets-spacing: 20px;
+}
+.elementor-element, .elementor-lightbox {
+    --swiper-theme-color: #000;
+    --swiper-navigation-size: 44px;
+    --swiper-pagination-bullet-size: 6px;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+.elementor-section {
+    position: relative;
+}
+
+.elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: 1140px;
+    padding: 180px 0;
+}
+
+.elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: 1140px;
+}
+.elementor-section .elementor-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+@media (min-width: 768px){
+.elementor-column.elementor-col-100, .elementor-column[data-col="100"] {
+    width: 100%;
+}
+}
+.elementor-element {
+    --widgets-spacing: 20px;
+}
+.elementor-element, .elementor-lightbox {
+    --swiper-theme-color: #000;
+    --swiper-navigation-size: 44px;
+    --swiper-pagination-bullet-size: 6px;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+.elementor-column {
+    position: relative;
+    min-height: 1px;
+    display: flex;
+}
+
+.elementor-31 .elementor-element.elementor-element-84287df>.elementor-element-populated {
+    padding: 0 30px 65px;
+}
+
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 10px;
+}
+.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
+    display: flex;
+}
+.elementor-widget-wrap {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.elementor-widget:not(:last-child) {
+    margin-bottom: 20px;
+}
+.elementor-widget:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.elementor-widget-wrap>.elementor-element {
+    width: 100%;
+}
+.elementor-element {
+    --widgets-spacing: 20px;
+}
+
+.elementor-31 .elementor-element.elementor-element-4ab3e8b>.elementor-widget-container {
+    margin: 0 0 30px;
+}
+
+.elementor-element .elementor-widget-container {
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+    color: #fff;
+}
+
+.ekit-wid-con .elementskit-section-title-wraper.center, .ekit-wid-con .elementskit-section-title-wraper.text_center {
+    text-align: center;
+}
+.ekit-wid-con .ekit-heading {
+    position: relative;
+}
+
+
+.elementor-31 .elementor-element.elementor-element-4ab3e8b .elementskit-section-title-wraper .elementskit-section-title {
+   color: #fff;
+    font-family: 'Neue Montreal';
+    font-size: var(--e-global-typography-d6435a8-font-size);
+    font-weight: var(--e-global-typography-d6435a8-font-weight);
+    line-height: var(--e-global-typography-d6435a8-line-height);
+    letter-spacing: var(--e-global-typography-d6435a8-letter-spacing);
+    word-spacing: var(--e-global-typography-d6435a8-word-spacing);
+}
+
+.ekit-wid-con .elementskit-section-title span {
+    color: #FFF;
+    font-family: Neue Montreal-medium;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ekit-heading--title{
+    color: #FFF;
+    font-family: Neue Montreal-medium;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.elementor-31 .elementor-element.elementor-element-4ab3e8b .elementskit-section-title-wraper .elementskit-section-title {
+color: #fff;
+    font-family: var(--e-global-typography-d6435a8-font-family),Sans-serif;
+    font-size: var(--e-global-typography-d6435a8-font-size);
+    font-weight: var(--e-global-typography-d6435a8-font-weight);
+    line-height: var(--e-global-typography-d6435a8-line-height);
+    letter-spacing: var(--e-global-typography-d6435a8-letter-spacing);
+    word-spacing: var(--e-global-typography-d6435a8-word-spacing);
+}
+
+.ekit-heading--title .elementskit-section-title {
+    color: #FFF;
+    font-family: Neue Montreal;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.elementor-widget-container p {
+    color: #FFF;
+    font-family: Neue Montreal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+@media(max-width:600px) {
+    .ekit-heading--title {
+        color: #FFF;
+        font-family: Neue Montreal-medium;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .ekit-wid-con .elementskit-section-title span {
+        color: #FFF;
+        font-family: Neue Montreal-medium;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media(max-width:460px) {
+    .ekit-heading--title {
+        color: #FFF;
+        font-family: Neue Montreal-medium;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .ekit-wid-con .elementskit-section-title span {
+        color: #FFF;
+        font-family: Neue Montreal-medium;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
