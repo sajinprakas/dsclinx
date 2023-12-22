@@ -909,7 +909,7 @@ nav .icon-burger .line {
     justify-content: space-around;
     align-items: center;
     column-gap: 230px; */
-    padding: 50px 15px 50px 15px;
+    padding: 50px 15px 1px 15px;
 }
 
 .why-us-outer{
@@ -953,8 +953,11 @@ nav .icon-burger .line {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #fff;
-    padding-top: 24px;  
+    /* border-bottom: 1px solid #fff; */
+    /* padding-top: 24px;   */
+    position: relative;
+    color: #fff;
+    bottom: 40px;
 }
 
 .why-us-sect2-txt h6{
@@ -2401,5 +2404,31 @@ padding-top: 12px;
     }
     .carousel-wrap {
         padding: 20px 0px 0px 5%;
+    }
+}
+
+.progress-bar {
+    /* border: 1px solid #ccc; */
+    height: 2px;
+    margin-bottom: 70px;
+    position: relative;
+    overflow: visible;
+    display: block;
+}
+
+.progress-bar-inner {
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.progress-text {
+    color: #000;
+}
+
+@media(max-width:768px) {
+    .progress-container {
+        margin-top: 72px
     }
 }

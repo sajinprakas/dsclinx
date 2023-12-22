@@ -51,3 +51,32 @@ $(document).ready(function() {
 		jQuery('html, body').animate({scrollTop: 0}, duration);
 		return false;
 	})
+
+
+	function updateProgressBar(progress, progressBarId) {
+        var progressBar = document.getElementById(progressBarId).getElementsByClassName('progress-bar-inner')[0];
+        var progressText = document.getElementById(progressBarId).getElementsByClassName('progress-text')[0];
+
+        progressBar.style.width = progress + '%';
+        progressText.innerHTML = progress + '%';
+    }
+
+    function simulateProgress(totalProgress, progressBarId) {
+        var interval = 60; // milliseconds
+        var currentProgress = 0;
+
+        var progressInterval = setInterval(function () {
+            updateProgressBar(currentProgress, progressBarId);
+
+            if (currentProgress >= totalProgress) {
+                clearInterval(progressInterval);
+            } else {
+                currentProgress++;
+            }
+        }, interval);
+    }
+
+    simulateProgress(100, 'progress-bar1');
+    simulateProgress(100, 'progress-bar2');
+    simulateProgress(100, 'progress-bar3');
+	simulateProgress(100, 'progress-bar4');
