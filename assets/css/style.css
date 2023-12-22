@@ -2116,6 +2116,15 @@ nav .icon-burger .line {
         .contact-div {
             bottom: 100px;
         }
+        .ab-sect-contact {
+            margin-bottom: auto;
+            position: inherit;
+            bottom: 0;
+            display: flex;
+            right: 0;
+            justify-content: center;
+            padding-bottom: 18px;
+        }
     }
 
 
