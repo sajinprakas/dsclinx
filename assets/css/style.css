@@ -2111,7 +2111,7 @@ nav .icon-burger .line {
             /* display: block; */
         }
         .contact-div {
-            bottom: 205px;
+            bottom: 100px;
         }
     }
 
@@ -2325,8 +2325,26 @@ transform: translatey(-50%); */
     color: #cdcbcd;
     }
     
+    .owl-prev i {
+        background-image: url('../images/ep_prev.png');
+        color: #B1B1B1;
+    }
+
+    .owl-next i {
+        background-image: url('../images/ep_next.png');
+    }
+
     .owl-nav i {
     font-size: 52px;
+    /* background-image: url('../images/arrow-up.png'); */
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50% 50%;
+    border: 1px solid;
+    border-radius: 50%;
     }
     
     .owl-nav .owl-prev {
@@ -2373,4 +2391,15 @@ padding-top: 12px;
 .company-works{
     padding-top: 70px;
     padding-bottom: 40px;
+}
+
+@media(max-width:600px) {
+    .owl-carousel .owl-item img {
+        padding: 15px;
+        height: 170px;
+        object-fit: contain;
+    }
+    .carousel-wrap {
+        padding: 20px 0px 0px 5%;
+    }
 }
