@@ -2646,7 +2646,6 @@ transform: translatey(-50%); */
     .owl-carousel .item {
     position: relative;
     z-index: 100; 
-    -webkit-backface-visibility: hidden; 
     border: 1px solid #B1B1B1;
     padding: 18px 30px;
     height: 300px;
