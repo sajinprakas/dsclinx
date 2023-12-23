@@ -469,11 +469,10 @@ nav .icon-burger .line {
   --------------------------------------------------------------*/
 
 .contact-us{
-    background-image: url('../images/pexels-max-rahubovskiy-6207817\ 1.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh; */
+    height: 100vh;
     /* height: 100%; */
     position: relative;
 }
