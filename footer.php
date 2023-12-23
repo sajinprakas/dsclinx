@@ -1,69 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Dsclinx</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-    <!-- Favicons -->
-    <link href="assets/img/favicon.svg" rel="icon" />
-    <!-- Fonts -->
-    <link rel="stylesheet" href="assets/font/style.css" />
-    <!-- libraries CSS Files -->
-    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/lib/bootstrap-icons/bootstrap-icons.css"rel="stylesheet"/>
-    <link href="assets/lib/aos/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-  </head>
-
-  <body>
-
-     <!-- Loader -->
-        <!-- <div class="loading-block">
-        <div class="loading-block_logo">
-            <img src="assets/images/image 1.png" alt="" class="fadeUp">
-        </div>
-    </div> -->
-
-    <!-- ======= Header ======= -->
-    <header class="header">
-      <nav class="container-fluid mt-3">
-        <input type="checkbox" id="nav-toggle" />
-        <a href="index.html" class="logo">
-          <img class="img-fluid" src="assets/images/logo.png" alt="" />
-        </a>
-        <ul class="links">
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="supplies.html">Supplies</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </label>
-      </nav>
-    </header>
-    <!-- End Header -->
-
-    <!-- banner -->
-    <div class="contact-us" style=" background-image: url('assets/images/pexels-max-rahubovskiy-6207817\ 1.png');">
-      <div class="overlay"></div>
-      <div class="contact-txt">
-        <h1>Contact us</h1>
-        <p>
-          DSClinx is the most trusted commercial/industrial contractor. Join our
-          ever-growing satisfied customer list today!
-        </p>
-      </div>
-    </div>
-    <!-- banner end -->
-
-    <div class="container-fluid">
+<div class="container-fluid">
       <div class="lets-together" data-aos="zoom-in" >
         <div class="container-fluid">
           <div class="row line">
@@ -178,10 +113,10 @@
         </div>
       </div>
     </div>
-
+  
     <!-- footer -->
 
-    <footer data-aos="zoom-in" data-aos-duration="1000">
+    <footer id="contact" data-aos="zoom-in" data-aos-duration="1000">
       <div class="footer-top" >
         <div class="container-fluid">
           <div class="footer-dsclinx">
@@ -201,16 +136,21 @@
       </div>
     </footer>
 
+
+    <div id="preloader"></div>
     <!-- back to top -->
 
     <div class="progress-wrap">
 		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
 			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
 		</svg>
+    <!-- <img class="progress-circle svg-content img-fluid" src="assets/images/arrow-up.png" alt=""> -->
 	</div>
 
+
+
     <!-- JavaScript Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/lib/aos/aos.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>

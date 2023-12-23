@@ -95,10 +95,10 @@ nav .links li {
 nav .links a {
     display: block;
     color: #FFF;
-    font-family: Neue Montreal;
+    font-family: Neue Montreal-regular;
     font-size: 18px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -202,9 +202,73 @@ nav .icon-burger .line {
 
 
 /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #fff;
+    border-top-color: #000000;
+    border-bottom-color: #000000;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* .display-lg{
+    display: block;
+  }
+  @media (min-width: 1744px) {
+    .display-lg{
+      display: none;
+    }
+    }
+  @media (max-width: 786px) {
+  .display-lg{
+    display: none;
+  }
+  } */
+  
+
+/*--------------------------------------------------------------
 # loading
 --------------------------------------------------------------*/
-
+/* 
   .loading-block {
     position: fixed;
     background: #ffffff;
@@ -243,7 +307,7 @@ nav .icon-burger .line {
         transform: translateY(100px);
     }
 }
-  
+   */
 /*--------------------------------------------------------------
 # loading End
 --------------------------------------------------------------*/
@@ -509,6 +573,7 @@ nav .icon-burger .line {
 }
 
 .contact-txt p {
+    font-family: 'Neue Montreal-regular';
     color: #FFF;
     text-align: center;
     font-size: 20px;
@@ -938,7 +1003,7 @@ nav .icon-burger .line {
 
 .why-us-outer p{
     color: #FFF;
-    font-family: Neue Montreal;
+    font-family: Neue Montreal-regular;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1020,7 +1085,6 @@ nav .icon-burger .line {
     }
     .about-inner-text p {
         color: #000;
-        font-family: Neue Montreal;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -1130,6 +1194,7 @@ nav .icon-burger .line {
 }
 
 .service-txt p {
+    font-family: 'Neue Montreal-regular';
     color: #FFF;
     text-align: left;
     font-size: 20px;
@@ -1474,7 +1539,7 @@ nav .icon-burger .line {
 .hero-super p{
     color: #FFF;
     /* text-align: center; */
-    font-family: Neue Montreal;
+    font-family: Neue Montreal-regular;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1555,10 +1620,10 @@ nav .icon-burger .line {
 
 .what-we-supply-sec p{
     color: #000;
-    font-family: Neue Montreal;
+    font-family: Neue Montreal-regular;
     font-size: 20px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 400;
     line-height: normal;
     width: 400px;
 }
@@ -1600,10 +1665,10 @@ nav .icon-burger .line {
 
 .supply-set-2 p{
     color: #000;
-    font-family: Neue Montreal;
+    font-family: Neue Montreal-regular;
     font-size: 18px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1649,10 +1714,10 @@ nav .icon-burger .line {
 
 .our-supply-txt li {
     color: #000;
-    font-family: Neue Montreal;
+    font-family: Neue Montreal-regular;
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
     margin: 0;
     padding-bottom:12px;
@@ -1967,7 +2032,7 @@ color: #fff;
 
 .elementor-widget-container p {
     color: #FFF;
-    font-family: Neue Montreal;
+    font-family: Neue Montreal-regular;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

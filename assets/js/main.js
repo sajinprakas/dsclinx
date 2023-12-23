@@ -1,14 +1,23 @@
 // loading animation
 
-$(document).ready(function() {
-	$(window).on("load", function () {
-	  $(".loading-block").delay(1000).fadeOut("");
-	  $(".loading-block_logo").delay(1000).fadeOut("");
-	});
-  });
+// $(document).ready(function() {
+// 	$(window).on("load", function () {
+// 	  $(".loading-block").delay(1000).fadeOut("");
+// 	  $(".loading-block_logo").delay(1000).fadeOut("");
+// 	});
+//   });
 	  
 		
-		
+    /**
+   * Preloader
+   */
+	let preloader = document.querySelector('#preloader');
+	if (preloader) {
+	  window.addEventListener('load', () => {
+		preloader.remove();
+	  });
+	}
+	
 	/*** Animation on scroll*/
   window.addEventListener('load', () => {
     AOS.init({
